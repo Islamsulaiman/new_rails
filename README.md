@@ -22,9 +22,3 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-
-
-Testing:
-
-Started the Rails server and navigated to http://localhost:3000/posts to ensure the view page renders correctly.
-Please review these changes and let me know if there are any improvements or adjustments needed. Thank you for considering this PR!
