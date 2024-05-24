@@ -33,5 +33,11 @@ class PostsController < ApplicationController
             else
               render :edit, notice: "not Created !" , status: 422
             end
+        
+        
+        def destroy
+            @post = Post.find(params[:id])
+            @post.destroy redirect_to posts_url base/posts
+            end
     end
 end
