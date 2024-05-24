@@ -3,10 +3,12 @@ class CreateUsers < ActiveRecord::Migration[7.1]
     create_table :users do |t|
       t.string :name
       t.date :dob
-      t.string :email, unique: true
+      t.string :email
       t.string :phone_number
 
       t.timestamps
     end
+
+    add_index :users, :email, unique: true
   end
 end
