@@ -22,4 +22,18 @@ class PostController < ApplicationController
     end
   end
 
+  def edit
+    @post = Post.find(params[:id])
+  end
+  def update
+    @post = Post.find(params[:id])
+
+    if @post.update({title: params[:post][:title] , content: params[:post][:content]})
+      redirect_to post_url base/posts(@post), notice: "Created !"
+    else
+      render :edit, notice: "not Created !" , status: 422
+    end
+
+  end
+
 end
