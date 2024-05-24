@@ -1,0 +1,1 @@
+json.partial! "posts/post", post: @postjson.partial! "users/user", user: @user
