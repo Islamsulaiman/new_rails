@@ -32,6 +32,11 @@
     <%= form.text_field :phone_number, class: "form-control" %>
   </div>
 
+  <div class="col-md-6">
+    <%= form.label :address, class: "form-label", style: "display: block" %>
+    <%= form.text_field :address, class: "form-control" %>
+  </div>
+
   <div class="col-12">
     <%= form.submit "Save", class: "btn btn-primary" %>
   </div>
