@@ -20,5 +20,9 @@ class PostsController < ApplicationController
     
         render :new, notice: "not Created !" , status: 422
         end
+
+        def edit
+            @post = Post.find(params[:id])
+          end
     end
 end
