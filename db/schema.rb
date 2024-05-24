@@ -10,10 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_05_24_122820) do
+ActiveRecord::Schema[7.1].define(version: 2024_05_24_150725) do
   create_table "posts", force: :cascade do |t|
     t.string "title"
-    t.string "content"
+    t.text "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -23,9 +23,9 @@ ActiveRecord::Schema[7.1].define(version: 2024_05_24_122820) do
     t.date "dob"
     t.string "email"
     t.string "phone_number"
+    t.string "address"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "address", null: false
   end
 
 end
