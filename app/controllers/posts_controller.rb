@@ -31,11 +31,15 @@ class PostsController < ApplicationController
     else
       render 'edit'
   end
+  end
 
   def destroy
 
     @post = Post.find(params[:id])
-    @post.destroy
+    if @post.destroy
+      @posts = Post.all
+      redirect_to '/posts',allow_other_host: true
+  end
   end
 
   private
