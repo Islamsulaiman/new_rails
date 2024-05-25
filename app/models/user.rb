@@ -1,2 +1,3 @@
 class User < ApplicationRecord
-end
+    has_many :posts, foreign_key: 'creator_id'
+  end
