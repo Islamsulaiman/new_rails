@@ -1,24 +1,19 @@
-# README
+Active Record Pattern:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Combines business logic and data persistence in a single object.
+Popularized by Martin Fowler and Ruby on Rails.
+Simplifies CRUD operations but can lead to bloated models.
 
-Things you may want to cover:
 
-* Ruby version
+Repository Pattern:
 
-* System dependencies
+Separates business logic from data persistence.
+Centralizes query construction and promotes modularity.
+Enhances scalability, flexibility, and testability.
+Suitable for complex domains with evolving business rules.
 
-* Configuration
 
-* Database creation
+Choosing the Right Pattern:
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Active Record: Ideal for simple applications with minimal business logic.
+Repository: Best for complex, scalable applications requiring flexibility and clear separation of concerns.
