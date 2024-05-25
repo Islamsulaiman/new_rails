@@ -1,0 +1,19 @@
+summary about ActiveRecord
+
+there is important relational between database and oop this relations is ORM
+this enable developers to manipulate database record instead of writing alot of raw of queries
+
+so there is a design pattern that encapsulating the complexities of relational db in object
+
+the ActiveRecord is design patern that is solve three main problems 
+
+--> main problems is 
+
+1-CRUD operations
+2-to save the results of queries in variable
+3-manipulating the quries value
+
+so the active Record make relations between the buisness logic and data presitences in single object
+
+active record implementation not only useful to simplify the database interactions but ensure that developer do best practices while working with databases.
+
